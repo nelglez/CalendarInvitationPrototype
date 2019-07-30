@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1086121490664-ku5cibfshg31qkqvaivb8icfgk2vd198.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1086121490664-ku5cibfshg31qkqvaivb8icfgk2vd198</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDqklzX0-4IboyCskJfGmDqgBCW1ahI1FY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1086121490664</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.innovationm.-</string>
+	<key>PROJECT_ID</key>
+	<string>ios-push-notification-2011d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ios-push-notification-2011d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1086121490664:ios:0528c020ff4ef622</string>
+	<key>DATABASE_URL</key>
+	<string>https://ios-push-notification-2011d.firebaseio.com</string>
+</dict>
+</plist>
