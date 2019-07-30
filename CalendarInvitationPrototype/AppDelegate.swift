@@ -33,6 +33,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
         }
+        // add actions for notifications
+        // 1
+        
+        let acceptAction = UNNotificationAction(
+            identifier: "AcceptAction", title: "Accept",
+            options: [.foreground])
+        let rejectAction = UNNotificationAction(
+            identifier: "RejectAction", title: "Reject",
+            options: [.foreground])
+        // 2
+        let newsCategory = UNNotificationCategory(
+            identifier: "EventsCategory", actions: [viewAction],
+            intentIdentifiers: [], options: [])
+        
+        // 3
+        UNUserNotificationCenter.current().setNotificationCategories([newsCategory])
+
         Messaging.messaging().delegate = self
         application.registerForRemoteNotifications()
         
