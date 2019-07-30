@@ -79,6 +79,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        if response.actionIdentifier == "AcceptAction" {
+            debugPrint("Invitation Accepted")
+        }else if response.actionIdentifier == "RejectAction"{
+            debugPrint("Invitation Rejected")
+        }
+        
+    }
+    
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
                      fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         // If you are receiving a notification message while your app is in the background,
@@ -95,6 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         CommonData.shared.allInvitations.append(InvitationModel(dict: userInfo))
         debugPrint(CommonData.shared.allInvitations.count)
         NotificationCenter.default.post(name: NSNotification.Name.eventNotification, object: nil)
+        
         
     }
     
