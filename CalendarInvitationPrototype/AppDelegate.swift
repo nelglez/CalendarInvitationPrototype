@@ -43,12 +43,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             identifier: "RejectAction", title: "Reject",
             options: [.foreground])
         // 2
-        let newsCategory = UNNotificationCategory(
-            identifier: "EventsCategory", actions: [viewAction],
+        let eventsCategory = UNNotificationCategory(
+            identifier: "EventsCategory", actions: [acceptAction,rejectAction],
             intentIdentifiers: [], options: [])
         
         // 3
-        UNUserNotificationCenter.current().setNotificationCategories([newsCategory])
+        UNUserNotificationCenter.current().setNotificationCategories([eventsCategory])
 
         Messaging.messaging().delegate = self
         application.registerForRemoteNotifications()
