@@ -33,14 +33,14 @@ struct InvitationModel{
         self.interviewDate = interviewDate
     }
     
-    init(dict:[AnyHashable:Any]){
+    init(dict:[AnyHashable:Any],acceptanceState:AcceptenceState? = AcceptenceState.PENDING){
         id              = Int(dict["id"] as? String ?? "0")
         cadidateName    = dict["cadidateName"] as? String
         higherQualification =   dict["higherQualification"] as? String
         experience   =  dict["experience"] as? String
         interviewDate   =   dict["interviewDate"] as? String
         interviewTime   =   dict["interviewTime"] as? String
-        acceptanceState =   .PENDING
+        self.acceptanceState =   acceptanceState
     }
 }
 

@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             options: [.foreground])
         let rejectAction = UNNotificationAction(
             identifier: "RejectAction", title: "Reject",
-            options: [.foreground])
+            options: [.destructive])
         // 2
         let eventsCategory = UNNotificationCategory(
             identifier: "EventsCategory", actions: [acceptAction,rejectAction],
@@ -86,11 +86,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-
+        let userInfo = response.notification.request.content.userInfo
         if response.actionIdentifier == "AcceptAction" {
+            CommonData.shared.allInvitations.append(InvitationModel(dict: userInfo,acceptanceState: .ACCEPTED))
             debugPrint("Invitation Accepted")
         }else if response.actionIdentifier == "RejectAction"{
             debugPrint("Invitation Rejected")
+        }else{
+            CommonData.shared.allInvitations.append(InvitationModel(dict: userInfo))
+            debugPrint(CommonData.shared.allInvitations.count)
+            NotificationCenter.default.post(name: NSNotification.Name.eventNotification, object: nil)
         }
 
     }
