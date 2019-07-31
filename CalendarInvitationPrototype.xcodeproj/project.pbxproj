@@ -58,6 +58,7 @@
 		1735028622EF2C260052F6F1 = {
 			isa = PBXGroup;
 			children = (
+				173BFF8F22F011E40037A11B /* CalendarInvitationPrototype.entitlements */,
 				1735029122EF2C260052F6F1 /* CalendarInvitationPrototype */,
 				1735029022EF2C260052F6F1 /* Products */,
 				DA01730E456DF3CC0A1E4463 /* Pods */,
@@ -91,11 +92,10 @@
 		1754D40D22F1513100B58D89 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1735029E22EF2C280052F6F1 /* Info.plist */,
 				173502AA22EF518F0052F6F1 /* CommonData.swift */,
-				173BFF8F22F011E40037A11B /* CalendarInvitationPrototype.entitlements */,
 				173BFF8D22F00C740037A11B /* GoogleService-Info.plist */,
 				1735029922EF2C280052F6F1 /* Assets.xcassets */,
-				1735029E22EF2C280052F6F1 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 				CODE_SIGN_ENTITLEMENTS = CalendarInvitationPrototype/CalendarInvitationPrototype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5WJ4B7E4Z;
-				INFOPLIST_FILE = CalendarInvitationPrototype/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalendarInvitationPrototype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +444,7 @@
 				CODE_SIGN_ENTITLEMENTS = CalendarInvitationPrototype/CalendarInvitationPrototype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5WJ4B7E4Z;
-				INFOPLIST_FILE = CalendarInvitationPrototype/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CalendarInvitationPrototype/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
