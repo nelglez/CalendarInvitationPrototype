@@ -33,7 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 2
         let eventsCategory = UNNotificationCategory(
             identifier: "EventsCategory", actions: [acceptAction,rejectAction],
-            intentIdentifiers: [], options: [])
+            intentIdentifiers: [])
+        
+        let categoriesForSettings = NSSet(array: [eventsCategory])
         
         // 3
         UNUserNotificationCenter.current().setNotificationCategories([eventsCategory])
@@ -50,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 completionHandler: {_, _ in })
         } else {
             let settings: UIUserNotificationSettings =
-                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: categoriesForSettings as? Set<UIUserNotificationCategory>)
             application.registerUserNotificationSettings(settings)
         }
         
@@ -84,13 +86,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        
+
         if response.actionIdentifier == "AcceptAction" {
             debugPrint("Invitation Accepted")
         }else if response.actionIdentifier == "RejectAction"{
             debugPrint("Invitation Rejected")
         }
-        
+
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print(deviceToken.map { String(format: "%02.2hhx", $0) }.joined())
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
