@@ -19,8 +19,47 @@
 		173BFF8A22EFFF510037A11B /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BFF8922EFFF510037A11B /* EventsTableViewCell.swift */; };
 		173BFF8E22F00C740037A11B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 173BFF8D22F00C740037A11B /* GoogleService-Info.plist */; };
 		173BFF9122F045890037A11B /* Extension+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173BFF9022F045890037A11B /* Extension+Notification.swift */; };
+		1763D0D822F1978D004B3B40 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763D0D722F1978D004B3B40 /* NotificationService.swift */; };
+		1763D0DC22F1978D004B3B40 /* Service.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1763D0D522F1978D004B3B40 /* Service.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1763D0E722F197B7004B3B40 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1763D0E622F197B7004B3B40 /* UserNotifications.framework */; };
+		1763D0E922F197B7004B3B40 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1763D0E822F197B7004B3B40 /* UserNotificationsUI.framework */; };
+		1763D0EC22F197B7004B3B40 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763D0EB22F197B7004B3B40 /* NotificationViewController.swift */; };
+		1763D0EF22F197B7004B3B40 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1763D0ED22F197B7004B3B40 /* MainInterface.storyboard */; };
+		1763D0F322F197B7004B3B40 /* content.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1763D0E522F197B7004B3B40 /* content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D9272301CF9AA104F16D09FB /* Pods_CalendarInvitationPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45083850F74F5D368899969 /* Pods_CalendarInvitationPrototype.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1763D0DA22F1978D004B3B40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1735028722EF2C260052F6F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1763D0D422F1978D004B3B40;
+			remoteInfo = Service;
+		};
+		1763D0F122F197B7004B3B40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1735028722EF2C260052F6F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1763D0E422F197B7004B3B40;
+			remoteInfo = content;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1763D0E022F1978D004B3B40 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1763D0F322F197B7004B3B40 /* content.appex in Embed App Extensions */,
+				1763D0DC22F1978D004B3B40 /* Service.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1735028F22EF2C260052F6F1 /* CalendarInvitationPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarInvitationPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +77,15 @@
 		173BFF8D22F00C740037A11B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		173BFF8F22F011E40037A11B /* CalendarInvitationPrototype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalendarInvitationPrototype.entitlements; sourceTree = "<group>"; };
 		173BFF9022F045890037A11B /* Extension+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Notification.swift"; sourceTree = "<group>"; };
+		1763D0D522F1978D004B3B40 /* Service.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Service.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1763D0D722F1978D004B3B40 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		1763D0D922F1978D004B3B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1763D0E522F197B7004B3B40 /* content.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = content.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1763D0E622F197B7004B3B40 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		1763D0E822F197B7004B3B40 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		1763D0EB22F197B7004B3B40 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		1763D0EE22F197B7004B3B40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1763D0F022F197B7004B3B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4463E533578932864BD799DD /* Pods-CalendarInvitationPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarInvitationPrototype.debug.xcconfig"; path = "Target Support Files/Pods-CalendarInvitationPrototype/Pods-CalendarInvitationPrototype.debug.xcconfig"; sourceTree = "<group>"; };
 		D03E7BEF5351B02F19059B2C /* Pods-CalendarInvitationPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarInvitationPrototype.release.xcconfig"; path = "Target Support Files/Pods-CalendarInvitationPrototype/Pods-CalendarInvitationPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		D45083850F74F5D368899969 /* Pods_CalendarInvitationPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarInvitationPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +100,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1763D0D222F1978D004B3B40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1763D0E222F197B7004B3B40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1763D0E922F197B7004B3B40 /* UserNotificationsUI.framework in Frameworks */,
+				1763D0E722F197B7004B3B40 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -60,6 +124,8 @@
 			children = (
 				173BFF8F22F011E40037A11B /* CalendarInvitationPrototype.entitlements */,
 				1735029122EF2C260052F6F1 /* CalendarInvitationPrototype */,
+				1763D0D622F1978D004B3B40 /* Service */,
+				1763D0EA22F197B7004B3B40 /* content */,
 				1735029022EF2C260052F6F1 /* Products */,
 				DA01730E456DF3CC0A1E4463 /* Pods */,
 				27E0464F59309FD9D5B0A44A /* Frameworks */,
@@ -70,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				1735028F22EF2C260052F6F1 /* CalendarInvitationPrototype.app */,
+				1763D0D522F1978D004B3B40 /* Service.appex */,
+				1763D0E522F197B7004B3B40 /* content.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,10 +194,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1763D0D622F1978D004B3B40 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1763D0D722F1978D004B3B40 /* NotificationService.swift */,
+				1763D0D922F1978D004B3B40 /* Info.plist */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1763D0EA22F197B7004B3B40 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				1763D0EB22F197B7004B3B40 /* NotificationViewController.swift */,
+				1763D0ED22F197B7004B3B40 /* MainInterface.storyboard */,
+				1763D0F022F197B7004B3B40 /* Info.plist */,
+			);
+			path = content;
+			sourceTree = "<group>";
+		};
 		27E0464F59309FD9D5B0A44A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D45083850F74F5D368899969 /* Pods_CalendarInvitationPrototype.framework */,
+				1763D0E622F197B7004B3B40 /* UserNotifications.framework */,
+				1763D0E822F197B7004B3B40 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,15 +244,52 @@
 				1735028C22EF2C260052F6F1 /* Frameworks */,
 				1735028D22EF2C260052F6F1 /* Resources */,
 				C46F86753AC056FE9EBA478C /* [CP] Embed Pods Frameworks */,
+				1763D0E022F1978D004B3B40 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1763D0DB22F1978D004B3B40 /* PBXTargetDependency */,
+				1763D0F222F197B7004B3B40 /* PBXTargetDependency */,
 			);
 			name = CalendarInvitationPrototype;
 			productName = CalendarInvitationPrototype;
 			productReference = 1735028F22EF2C260052F6F1 /* CalendarInvitationPrototype.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1763D0D422F1978D004B3B40 /* Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1763D0DF22F1978D004B3B40 /* Build configuration list for PBXNativeTarget "Service" */;
+			buildPhases = (
+				1763D0D122F1978D004B3B40 /* Sources */,
+				1763D0D222F1978D004B3B40 /* Frameworks */,
+				1763D0D322F1978D004B3B40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Service;
+			productName = Service;
+			productReference = 1763D0D522F1978D004B3B40 /* Service.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1763D0E422F197B7004B3B40 /* content */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1763D0F422F197B7004B3B40 /* Build configuration list for PBXNativeTarget "content" */;
+			buildPhases = (
+				1763D0E122F197B7004B3B40 /* Sources */,
+				1763D0E222F197B7004B3B40 /* Frameworks */,
+				1763D0E322F197B7004B3B40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = content;
+			productName = content;
+			productReference = 1763D0E522F197B7004B3B40 /* content.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -186,6 +312,12 @@
 							};
 						};
 					};
+					1763D0D422F1978D004B3B40 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					1763D0E422F197B7004B3B40 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 1735028A22EF2C260052F6F1 /* Build configuration list for PBXProject "CalendarInvitationPrototype" */;
@@ -202,6 +334,8 @@
 			projectRoot = "";
 			targets = (
 				1735028E22EF2C260052F6F1 /* CalendarInvitationPrototype */,
+				1763D0D422F1978D004B3B40 /* Service */,
+				1763D0E422F197B7004B3B40 /* content */,
 			);
 		};
 /* End PBXProject section */
@@ -215,6 +349,21 @@
 				173BFF8E22F00C740037A11B /* GoogleService-Info.plist in Resources */,
 				1735029A22EF2C280052F6F1 /* Assets.xcassets in Resources */,
 				1735029822EF2C260052F6F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1763D0D322F1978D004B3B40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1763D0E322F197B7004B3B40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1763D0EF22F197B7004B3B40 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +427,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1763D0D122F1978D004B3B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1763D0D822F1978D004B3B40 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1763D0E122F197B7004B3B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1763D0EC22F197B7004B3B40 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1763D0DB22F1978D004B3B40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1763D0D422F1978D004B3B40 /* Service */;
+			targetProxy = 1763D0DA22F1978D004B3B40 /* PBXContainerItemProxy */;
+		};
+		1763D0F222F197B7004B3B40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1763D0E422F197B7004B3B40 /* content */;
+			targetProxy = 1763D0F122F197B7004B3B40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1735029622EF2C260052F6F1 /* Main.storyboard */ = {
@@ -295,6 +473,14 @@
 				1735029C22EF2C280052F6F1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1763D0ED22F197B7004B3B40 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1763D0EE22F197B7004B3B40 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -420,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4463E533578932864BD799DD /* Pods-CalendarInvitationPrototype.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CalendarInvitationPrototype/CalendarInvitationPrototype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +627,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D03E7BEF5351B02F19059B2C /* Pods-CalendarInvitationPrototype.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CalendarInvitationPrototype/CalendarInvitationPrototype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +639,82 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.innovationm.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1763D0DD22F1978D004B3B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5WJ4B7E4Z;
+				INFOPLIST_FILE = Service/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.innovationm.-.Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1763D0DE22F1978D004B3B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5WJ4B7E4Z;
+				INFOPLIST_FILE = Service/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.innovationm.-.Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1763D0F522F197B7004B3B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5WJ4B7E4Z;
+				INFOPLIST_FILE = content/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.innovationm.-.content";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1763D0F622F197B7004B3B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5WJ4B7E4Z;
+				INFOPLIST_FILE = content/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.innovationm.-.content";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -473,6 +737,24 @@
 			buildConfigurations = (
 				173502A222EF2C280052F6F1 /* Debug */,
 				173502A322EF2C280052F6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1763D0DF22F1978D004B3B40 /* Build configuration list for PBXNativeTarget "Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1763D0DD22F1978D004B3B40 /* Debug */,
+				1763D0DE22F1978D004B3B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1763D0F422F197B7004B3B40 /* Build configuration list for PBXNativeTarget "content" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1763D0F522F197B7004B3B40 /* Debug */,
+				1763D0F622F197B7004B3B40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

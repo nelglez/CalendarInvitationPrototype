@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarInvitationPrototype/AppDelegate.swift"
-            timestampString = "586255836.516796"
+            timestampString = "586335181.887241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "application(_:didReceiveRemoteNotification:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarInvitationPrototype/AppDelegate.swift"
-            timestampString = "586255836.517395"
+            timestampString = "586335181.887849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "application(_:didReceiveRemoteNotification:fetchCompletionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarInvitationPrototype/AppDelegate.swift"
-            timestampString = "586255836.517768"
+            timestampString = "586335181.888142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"

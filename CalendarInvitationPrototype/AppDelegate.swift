@@ -97,6 +97,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             debugPrint(CommonData.shared.allInvitations.count)
             NotificationCenter.default.post(name: NSNotification.Name.eventNotification, object: nil)
         }
+        
+        //clear bedges
+        UIApplication.shared.applicationIconBadgeNumber = 0
 
     }
     
