@@ -162,3 +162,7 @@ extension AppDelegate : MessagingDelegate {
         debugPrint("message Data \(remoteMessage.appData)")
     }
 }
+
+
+//Notification JSON Format
+//{"aps":{"alert":"Hey You Have A New Interview Notification ","sound":"default","category": "EventsCategory"},"id":8,"cadidateName":"AYUSH","higherQualification":"Grad","experience":"Fresher","interviewDate":"04-08-2019","interviewTime":"2-4 PM"}

@@ -81,6 +81,13 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="200"/>
+                    <connections>
+                        <outlet property="labelCandidateName" destination="mkS-1g-NYe" id="7qp-2T-lcr"/>
+                        <outlet property="labelExperience" destination="BZt-Fi-Z9C" id="QyN-Vu-iM5"/>
+                        <outlet property="labelHigherQualification" destination="b8W-xz-TOl" id="Ei3-x5-bK5"/>
+                        <outlet property="labelInterviewDate" destination="OwI-aD-6vm" id="1AZ-eX-KpT"/>
+                        <outlet property="labelInterviewTime" destination="qfm-jB-BgW" id="oGz-7L-Nob"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
